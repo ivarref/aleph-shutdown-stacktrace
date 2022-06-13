@@ -30,8 +30,7 @@
          (fn [curr]
            (stop! curr)
            [(http/start-server (fn [req] (handler req))
-                               {:executor       (Executors/newFixedThreadPool 256)
-                                :socket-address (InetSocketAddress. "0.0.0.0" 8080)})]))
+                               {:socket-address (InetSocketAddress. "0.0.0.0" 8080)})]))
   (log/info "Server listening at 0.0.0.0:8080"))
 
 (defn shutdown! [p]
