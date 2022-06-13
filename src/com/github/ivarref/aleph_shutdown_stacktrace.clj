@@ -3,10 +3,8 @@
             [clojure.tools.logging :as log])
   (:import (java.io Closeable)
            (java.net InetSocketAddress)
-           (java.util.concurrent Executors)
            (sun.misc Signal SignalHandler))
   (:gen-class))
-
 
 (defn handler [_]
   {:status  200
