@@ -52,8 +52,6 @@
       (log/info "shutting down in 30 seconds ...")
       (when (= :timeout (deref p 10000 :timeout))
         (shutdown! p)))
-
     (run-main nil)
     @p
-    (log/info "About to exit")
-    (Thread/sleep 5000)))
+    (log/info "About to exit")))
