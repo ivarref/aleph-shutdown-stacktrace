@@ -1,0 +1,3 @@
+{:lib     com.github.ivarref/aleph-shutdown-stacktrace
+ :version "0.1.{{git/commit-count}}"
+ :main    com.github.ivarref.aleph-shutdown-stacktrace}

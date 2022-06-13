@@ -1,0 +1,6 @@
+*
+!src/
+!.git/
+!resources/
+!deps.edn
+!build.edn
